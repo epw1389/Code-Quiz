@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container">
+                <div class="col-md-4 float-left" id="highScores">
+                    <p>View High Scores</p> 
+                </div>
+                <div class="col-md-4 float-right text-right" id="timer">
+                    Timer
+                </div>
+                <br>
+                <br>
+                <br>
+                <h1 class="col-md mt-3 text-center">Coding Quiz</h1>
+            </div>
+    <br>
+    <br>
+    <br>
+    <br>
+            
+            <div class="row">
+                <div class="col-md-10 mx-auto text-center">
+                    <div class="card" id="questionText">
+                        <div class="card-body">
+                            <p class="card-text">Welcome to the coding quiz! This is a timed quiz. You will get five points for each correct answer plus extra points for how fast you finish. Click below to start the quiz... Good luck!</p> 
+                            <button type="button" class="btn btn-primary btn-lg " id="start">Start Quiz</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <ul id="answerChoices"></ul>
+                        <div id="answerFeedback"></div>
+                        <button class="btn btn-primary btn-lg" id="next">Next</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="modal-container" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <p class="close">&times;</p>
+                          <h2 id="modal-name">
+                          </h2>
+                        </div>
+                        <div class="modal-body">
+                          <h3>
+                            Scores:
+                          </h3>
+                          <ul id="scoreList"></ul>
+                        </div>
+                    </div>
+                </div>
+            <div id="initials-Container" class="initials">
+                <div class="initials-content">
+                    <div class="initials-header">
+                        <h5 id="initials-instructions">Please enter your initials</h5>
+                    </div>
+                    <div class="intials-body">
+                        <div id="scoreContain">Final Score: <span id="testScore"></span></div>
+                        <textarea id="initials-enter" cols="10" rows="1"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" id="save">Save</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+
+        <script type="text/javascript" src="questions.js"></script>
+        <script type="text/javascript" src="myScript.js"></script>
+        
+    </body>
+
+
+
+
+</html>
